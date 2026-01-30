@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Sun, Moon } from "lucide-react";
 import '../App.css';
 
 function NavBar({toggleTheme, darkMode}){
@@ -12,8 +13,8 @@ function NavBar({toggleTheme, darkMode}){
             </div>
             
             <button className="theme-btn" onClick={toggleTheme}>
-                <span>{darkMode ? "☀️": "🌙"}</span>
-                {darkMode ? 'Light Mode': 'Dark Mode'}
+                <span>{darkMode ? <Sun size={20} />: <Moon size={20} />}</span>
+                {/* {darkMode ? 'Light Mode': 'Dark Mode'} */}
                 </button>
         </nav>
     )

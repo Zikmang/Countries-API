@@ -60,7 +60,7 @@ function HomePage() {
             </div>
 
             
-            {loading && <h2 className="loading-text">Loading countries...</h2>}
+            {loading && <div className="loader"></div>}
 
             {!loading && (
                 <div className="countries-grid">
